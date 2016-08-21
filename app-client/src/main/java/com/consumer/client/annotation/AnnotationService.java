@@ -1,6 +1,7 @@
 package com.consumer.client.annotation;
 
 import com.api.service.UserService;
+
 import com.dianping.pigeon.remoting.invoker.config.annotation.Reference;
 
 public class AnnotationService {
