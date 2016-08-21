@@ -2,13 +2,13 @@
   
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.zhaopeng</groupId>
-  <artifactId>pigeno-zp-dsys</artifactId>
+  <artifactId>app-parent</artifactId>
   <packaging>pom</packaging>
   <version>0.0.1-SNAPSHOT</version>
 
   <modules>
-  <module>pigeon-zp-api</module>
-  <module>pigeon-zp-bprovider</module>
-  <module>pigeon-zp-consumer</module>
+  <module>app-api</module>
+  <module>app-client</module>
+  <module>app-server</module>
   </modules>
 </project>
