@@ -12,4 +12,8 @@ public class UserServiceImpl implements UserService {
 		return "from provider say"+content;
 	}
 
+	public void init() throws Exception {
+		System.out.println("this is init ");
+	}
+
 }

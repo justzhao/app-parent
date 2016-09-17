@@ -6,8 +6,16 @@ import com.dianping.pigeon.remoting.invoker.config.annotation.Reference;
 
 public class AnnotationService {
 
-	@Reference(timeout = 1000)
+	@Reference(timeout = 1000,callType = "future")
 	private UserService userService;
+
+	public UserService getUserService() {
+		return userService;
+	}
+
+	public void setUserService(UserService userService) {
+		this.userService = userService;
+	}
 
 	public String testService(String input) {
 		return userService.sayHello(input);
