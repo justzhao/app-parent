@@ -48,7 +48,11 @@ public class FutureInvoker {
         context.start();
         AnnotationService annotationService = (AnnotationService)context.getBean("annotationService");
         UserService userService=annotationService.getUserService();
-       userService.sayHello("123123");
+        try {
+            userService.sayHello("123123");
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Future futureResult = ServiceFutureFactory.getFuture();
 
         try {
